@@ -10,6 +10,7 @@ let order = [
 
 
 
+
 // - In `exercise-3.js`, you have been provided with a takeout order. Write a program that will print out the receipt for this order.
 // - Log each individual item to the console.
 // - Log the total cost of the order to the console.
