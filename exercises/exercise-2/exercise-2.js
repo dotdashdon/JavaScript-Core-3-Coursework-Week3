@@ -70,3 +70,37 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+
+// ## Task 1
+
+// - In `exercise-2.js` write a program that will take the `hogwarts` array as input and display the names of the people who belong to the Gryffindor house.
+// - Use array destructuring to extract the values you need out of the array.
+
+
+function gryffindorHouse (hogwarts) {
+   hogwarts.forEach(({firstName , lastName, house}) => {
+       if (house === 'Gryffindor'){
+         console.log(`${firstName} ${lastName}`)
+   }
+});
+}
+
+gryffindorHouse(hogwarts);
+
+
+// ## Task 2
+
+// - In `exercise-2.js` write a program that will take the `hogwarts` array as input and display the names of teachers who have pets.
+// - Use array destructuring to extract the values you need out of the array.
+
+function teacherOwnPet(hogwarts) {
+   hogwarts.forEach(({firstName, lastName,pet, occupation}) =>{
+     if (pet !==null && occupation ==='Teacher'){
+        console.log(`${firstName} ${lastName}`)
+     }
+   });
+}
+
+
+teacherOwnPet(hogwarts);
